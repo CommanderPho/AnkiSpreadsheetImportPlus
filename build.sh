@@ -9,4 +9,4 @@ then
   exit
 fi
 
-(cd spreadsheet_import_plus && zip -r ../spreadsheet_import_plus.ankiaddon . --exclude \*.pyc \*pycache\* meta.json)
+(cd spreadsheet_import_plus && zip -r ../spreadsheet_import_plus.ankiaddon . --exclude \*.gz \*.pyc \*pycache\* meta.json)
