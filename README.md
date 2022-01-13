@@ -36,3 +36,17 @@ python3 -m venv libs_venv
 source libs_venv/bin/activate
 pip install "openpyxl==3.0.3"
 ```
+
+Alternatively, for Anaconda:
+```
+conda create --name "AnkiSpreadsheetImportPlus" python=3.7 openpyxl=3.0.3
+conda activate AnkiSpreadsheetImportPlus
+
+```
+
+This problem was caused by https://forums.ankiweb.net/t/importer-code-changes-in-2-1-44-45-46/14080/2
+Added hook:
+https://github.com/ankitects/anki/pull/1543
+
+ModuleNotFoundError: No module named 'openpyxl'
+
